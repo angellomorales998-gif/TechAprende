@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechAprende</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende HTML, CSS y JavaScript con los cursos prácticos de TechAprende.">
+  <title>TechAprende | Aprende desarrollo web</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>TechAprende</h1>
-    <p>Mi portal de cursos de desarrollo web.</p>
+  <a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado" id="inicio">
+    <div class="barra-superior">
+      <a class="marca" href="#inicio" aria-label="TechAprende, inicio"><span class="marca-icono">T</span><span>Tech<span class="marca-resaltado">Aprende</span></span></a>
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="#inicio" class="activo">Inicio</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#ventajas">Beneficios</a>
+        <a href="#inscripcion" class="menu-cta">Solicitar información <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="hero-texto">
+        <p class="etiqueta"><span class="punto"></span> FORMACIÓN DIGITAL PARA TODOS</p>
+        <h1>Tu próxima habilidad<br>empieza <span>en la web.</span></h1>
+        <p class="hero-descripcion">Aprende a crear sitios web desde cero con cursos prácticos, claros y diseñados para avanzar a tu ritmo.</p>
+        <div class="hero-acciones"><a class="boton boton-claro" href="#cursos">Explorar cursos <span aria-hidden="true">↓</span></a><a class="enlace-secundario" href="#inscripcion">Quiero más información <span aria-hidden="true">→</span></a></div>
+        <div class="hero-datos"><div><strong>100%</strong><span>Enfoque práctico</span></div><div><strong>3 rutas</strong><span>Para comenzar</span></div><div><strong>A tu ritmo</strong><span>Aprendizaje flexible</span></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Ilustración decorativa de código web" role="img">
+        <div class="visual-orbita orbita-uno"></div><div class="visual-orbita orbita-dos"></div>
+        <div class="ventana-codigo"><div class="ventana-barra"><span></span><span></span><span></span><b>tu-proyecto.html</b></div><div class="codigo"><p><i>01</i> <span class="c-purpura">&lt;section</span> <span class="c-verde">class</span>=<span class="c-amarillo">"futuro"</span><span class="c-purpura">&gt;</span></p><p><i>02</i> &nbsp;&nbsp;<span class="c-purpura">&lt;h1&gt;</span>Hola, mundo<span class="c-purpura">&lt;/h1&gt;</span></p><p><i>03</i> &nbsp;&nbsp;<span class="c-purpura">&lt;p&gt;</span>Estoy creando<span class="c-purpura">&lt;/p&gt;</span></p><p><i>04</i> &nbsp;&nbsp;<span class="c-purpura">&lt;button</span><span class="c-purpura">&gt;</span>Comenzar<span class="c-purpura">&lt;/button&gt;</span></p><p><i>05</i> <span class="c-purpura">&lt;/section&gt;</span></p><div class="codigo-cursor"></div></div></div>
+        <div class="flotante flotante-html"><span class="lenguaje-icono naranja">5</span><div><strong>HTML</strong><small>Estructura</small></div></div>
+        <div class="flotante flotante-js"><span class="lenguaje-icono amarillo">JS</span><div><strong>JavaScript</strong><small>Interactividad</small></div></div>
+        <div class="circulo-decorativo">&lt;/&gt;</div>
+      </div>
+    </div>
+    <div class="hero-pie"><span>APRENDE · PRACTICA · CREA</span><span>CONSTRUYE TU CAMINO DIGITAL <span aria-hidden="true">↘</span></span></div>
+  </header>
+
+  <main id="contenido">
+    <section class="seccion cursos-seccion" id="cursos">
+      <div class="encabezado-seccion"><div><p class="sobrelinea">NUESTRAS RUTAS DE APRENDIZAJE</p><h2>Aprende haciendo</h2></div><p class="texto-seccion">Tres herramientas esenciales para transformar tus ideas en proyectos web reales.</p></div>
+      <div class="tarjetas">
+        <article class="tarjeta tarjeta-html"><div class="tarjeta-top"><span class="curso-icono html-icono">&lt;/&gt;</span><span class="nivel">NIVEL INICIAL</span></div><p class="numero-curso">CURSO 01</p><h3>HTML desde cero</h3><p>Aprende a organizar el contenido de una página con títulos, textos, imágenes y enlaces.</p><div class="curso-meta"><span>◷ A tu ritmo</span><span>Fundamentos</span></div><a href="#inscripcion" class="tarjeta-enlace" data-curso="HTML">Conocer el curso <span aria-hidden="true">↗</span></a></article>
+        <article class="tarjeta tarjeta-css"><div class="tarjeta-top"><span class="curso-icono css-icono">✳</span><span class="nivel">NIVEL INICIAL</span></div><p class="numero-curso">CURSO 02</p><h3>Diseño con CSS</h3><p>Combina colores, tipografías, espacios y diseños responsivos para mejorar la experiencia.</p><div class="curso-meta"><span>◷ A tu ritmo</span><span>Diseño visual</span></div><a href="#inscripcion" class="tarjeta-enlace" data-curso="CSS">Conocer el curso <span aria-hidden="true">↗</span></a></article>
+        <article class="tarjeta tarjeta-js"><div class="tarjeta-top"><span class="curso-icono js-icono">JS</span><span class="nivel">NIVEL INICIAL</span></div><p class="numero-curso">CURSO 03</p><h3>JavaScript práctico</h3><p>Agrega acciones, valida formularios y crea experiencias interactivas para tus usuarios.</p><div class="curso-meta"><span>◷ A tu ritmo</span><span>Programación</span></div><a href="#inscripcion" class="tarjeta-enlace" data-curso="JavaScript">Conocer el curso <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="franja-beneficios" id="ventajas"><div class="beneficios-intro"><p class="sobrelinea">TU APRENDIZAJE, A TU MANERA</p><h2>Menos teoría aislada.<br><span>Más proyectos reales.</span></h2></div><div class="beneficio"><span class="beneficio-numero">01</span><div><h3>Aprende paso a paso</h3><p>Comienza por lo esencial y avanza con una base clara.</p></div></div><div class="beneficio"><span class="beneficio-numero">02</span><div><h3>Practica con propósito</h3><p>Relaciona cada concepto con una idea que puedas construir.</p></div></div><div class="beneficio"><span class="beneficio-numero">03</span><div><h3>Construye confianza</h3><p>Desarrolla habilidades que te ayuden a seguir aprendiendo.</p></div></div></section>
+
+    <section class="seccion inscripcion-seccion" id="inscripcion"><div class="formulario-intro"><p class="sobrelinea">DA EL PRIMER PASO</p><h2>¿Hablamos de tu<br><span>próximo proyecto?</span></h2><p>Completa el formulario y cuéntanos qué te gustaría aprender. Te mostraremos la ruta que mejor se adapta a tus intereses.</p><div class="nota-privacidad"><span aria-hidden="true">✓</span><span>Los campos marcados son obligatorios. Esta demostración valida los datos en tu navegador y no los envía a un servidor.</span></div></div>
+      <div class="formulario-panel"><form id="formulario" novalidate>
+        <div class="campo"><label for="nombre">Nombre completo <span>*</span></label><input id="nombre" name="nombre" type="text" minlength="3" maxlength="60" autocomplete="name" placeholder="Ej. Alex Rodríguez" required aria-describedby="error-nombre"><small class="error" id="error-nombre"></small></div>
+        <div class="campo"><label for="correo">Correo electrónico <span>*</span></label><input id="correo" name="correo" type="email" maxlength="100" autocomplete="email" placeholder="nombre@correo.com" required aria-describedby="error-correo"><small class="error" id="error-correo"></small></div>
+        <div class="campo"><label for="curso">Curso de interés <span>*</span></label><select id="curso" name="curso" required aria-describedby="error-curso"><option value="">Selecciona una ruta</option><option value="HTML">HTML desde cero</option><option value="CSS">Diseño con CSS</option><option value="JavaScript">JavaScript práctico</option></select><small class="error" id="error-curso"></small></div>
+        <div class="campo"><label for="modalidad">¿Qué te gustaría lograr? <span class="opcional">(opcional)</span></label><select id="modalidad" name="modalidad"><option value="">Selecciona una opción</option><option>Crear mi primera página</option><option>Mejorar el diseño de una web</option><option>Aprender programación interactiva</option><option>Explorar todas las rutas</option></select></div>
+        <label class="check-privacidad"><input type="checkbox" id="acepto" name="acepto" required><span>Confirmo que los datos ingresados son correctos. <span>*</span></span></label><small class="error" id="error-acepto"></small>
+        <div class="acciones-formulario"><button class="boton boton-enviar" type="submit">Validar solicitud <span aria-hidden="true">→</span></button><button class="boton boton-limpiar" type="reset">Limpiar</button></div>
+        <p id="resultado" class="resultado" role="status" aria-live="polite"></p>
+      </form></div>
+    </section>
+  </main>
+  <footer class="pie"><a class="marca marca-pie" href="#inicio"><span class="marca-icono">T</span><span>Tech<span class="marca-resaltado">Aprende</span></span></a><p>Proyecto académico de Desarrollo Web I</p><a href="#inicio" class="volver-arriba">Volver arriba ↑</a></footer>
 </body>
 </html>
